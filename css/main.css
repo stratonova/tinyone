@@ -7,8 +7,6 @@
 html, body {
     width: 100%;
     min-height: 100vh;
-    /* min-height если контент вылазит - то высота будет расти за контентом, если просто поставить height, то контент будет вілазить за "рамки"*/
-    /* viewport игнорирует высоту родителя, лучше использовать только(!!!) для высоты(!!!) */
 }
 
 body {
@@ -173,12 +171,10 @@ body {
 
 .hero__btn-item:focus {
     opacity: 1;
-    cursor: pointer;
     transition: all .2s ease-in;
 }
 
 .features {
-    height: 100vh;
     background-color: #FCFCFC;
 }
 
@@ -186,7 +182,7 @@ body {
     text-align: center;
     width: 740px;
     margin: 0 auto;
-    margin-top: 118px;
+    margin-top: 75px;
 }
 
 .features--container {
@@ -199,6 +195,7 @@ body {
     justify-content: space-between;
     flex-wrap: wrap;
     padding-left: 0;
+    margin-bottom: 97px;
 }
 
 .features__list-item {
@@ -218,7 +215,6 @@ body {
 }
 
 .footer-container {
-    height: 100vh;
     background-color: #010101;
 }
 
@@ -231,7 +227,6 @@ body {
 }
 
 .submit-form {
-    text-align: center;
     width: 740px;
     margin: 0 auto;
     margin-top: 55px;
@@ -260,10 +255,14 @@ body {
     outline: none;
     border: none;
     text-transform: uppercase;
+    line-height: 12px;
+    padding: 11px 34px 9px 34px;
 }
 
 .submit-btn:hover {
     cursor: pointer;
+    color: #FCFCFC;
+    transition: all .2s ease-in;
   }
 
 .network-list {
@@ -279,6 +278,11 @@ body {
     margin-left: 40px;
 }
 
+.network-list-img:hover {
+    border-radius: 6px;
+    background-color: #FCFCFC;
+}
+
 .footer {
     color: #C0C0C0;
     justify-content: space-between;
@@ -286,6 +290,7 @@ body {
     font-size: 16px;
     opacity: 0.7;
     margin-top: 170px;
+    padding-bottom: 97px;
 }
 
 .contacts {
