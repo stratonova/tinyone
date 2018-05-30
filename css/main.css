@@ -149,7 +149,7 @@ body {
 .hero__btn {
     display: flex;
     justify-content: center;
-    margin-top: 160px;
+    margin-top: 100px;
 }
 
 .hero__btn-item {
@@ -276,6 +276,10 @@ body {
 
 .network-list-item:not(:first-child) {
     margin-left: 40px;
+}
+
+.network-list-link {
+    height: 100%;
 }
 
 .network-list-img:hover {
